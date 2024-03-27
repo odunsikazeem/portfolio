@@ -1,0 +1,31 @@
+.profile {
+    padding: 20px;
+    margin: 20px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+}
+
+.skills img {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+@media screen and (max-width:768px) {
+
+    .skills {
+        display: flex;
+        
+    }
+    .skills img {
+        height: 100px;
+        width: 100px;
+    }
+    
+}

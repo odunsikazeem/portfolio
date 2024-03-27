@@ -1,0 +1,27 @@
+.burger{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    
+}
+.hamburger {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: black;
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 768px){
+    .burger {
+        display: flex;
+    }  
+}

@@ -1,0 +1,70 @@
+.contact {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: 10% auto;
+  padding: 5px 0;
+}
+
+.contact h1 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.central h2{
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.binder {
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  
+}
+.information {
+  line-height: 4rem;
+  margin-right: 20px;
+}
+
+.column-1 li {
+  text-decoration: none;
+}
+input{
+  width: 250px;
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  font-weight: 300;
+  
+}
+textarea {
+    width: 250px;
+    min-height: 150px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+}
+
+button {
+ appearance: none;
+ outline: 0;
+ background-color: white;
+ padding: 10px 15px; 
+ border-radius: 3px;
+ width: 250px;
+ border-radius: 3px;
+ font-size: 18px;
+ cursor: pointer;
+}
+
+button:hover {
+background-color: #74b9ff;
+}

@@ -1,0 +1,38 @@
+.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-decoration: none;
+    font-size: 18px;
+     
+  }
+  .nav-item {
+    padding: 10px;
+    color: #fff;
+    
+  }
+  a.nav-link {
+    color: #333;
+    text-decoration: none;
+  }
+
+  a.nav-link:hover{
+    background-color: #fff;
+    border-radius: 20px;
+    border-style: groove;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .nav-tabs {
+        flex-flow: column nowrap; 
+        background-color: #74b9ff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 20vh;
+        width: 150px;
+        padding-top: 3.5rem;
+    } 
+  }
