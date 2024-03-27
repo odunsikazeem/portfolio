@@ -3,7 +3,7 @@ const projectlist = [
     id: 1,
     title: "Portfolio",
     image: "/src/asset/portfolio.png",
-    projectURL: "https://spectacular-dusk-12cad8.netlify.app",
+    projectURL: "https://akoredeprojects.netlify.app/",
     github: "https://github.com/odunsikazeem",
     info: "This project contains my professional profile, personal projects,social media accounts.I embarked on this project to showcase my dexterity in Frontend Development to potential employers,collaborators or clients that might need my services.",
   },
