@@ -10,7 +10,6 @@ function Hamburger() {
     console.log (isOpen)
   };
 
-
   useEffect (
     ()=>{
       const hideRightNav=()=>{
@@ -26,7 +25,6 @@ function Hamburger() {
      };
     }, []
  )
-
 
   return (
     <>

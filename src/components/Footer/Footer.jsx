@@ -6,12 +6,10 @@ let currentYear = currentDate.getFullYear();
 
 
 function Footer () {
-	return (
-				
+	return (		
   		<footer >
     		<p> Copyright © {currentYear}</p>
-  		</footer>	
-			
+  		</footer>			
 	)
 };
 export default Footer;
