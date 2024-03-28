@@ -4,6 +4,8 @@ import "./style.css"
 function About() {
   return (
     <div className="about">
+
+      <h1>Academic background</h1>
       <p>
         A dedicated frontend developer with a solid educational background and a
         passion for creating captivating and interactive applications. Holding a
