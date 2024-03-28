@@ -65,6 +65,18 @@ button {
  cursor: pointer;
 }
 
+.response {
+  text-align: center;
+  margin: 10px;
+  color: #74b9ff;
+}
+
 button:hover {
 background-color: #74b9ff;
+}
+
+@media screen and (max-width:768px) {
+  .binder {
+    display: block;
+  } 
 }

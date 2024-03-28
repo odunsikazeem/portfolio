@@ -4,6 +4,12 @@ import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [ResponseText, setResponseText] = useState(" ");
+   const [input, setInput] = useState({
+   from_name: "",
+   from_email: "",
+   message: "",
+   });
+
 
   const form = useRef();
 
@@ -17,19 +23,36 @@ function Contact() {
       .then(
         () => {
           setResponseText("Submitted");
-          console.log("SUCCESS!");
+          setInput ({
+            from_name: "",
+            from_email: "",
+            message: "",
+          });
+
+          setTimeout(() => {
+            setResponseText("")
+          }, 1000);
+
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          return ("FAILED...", error.text);
         }
       );
+  };
+
+  const inputChange= (e) => {
+    const { name, value } = e.target;
+    setInput ((prevValue) => ({
+      ...prevValue,
+      [name] : value
+    }));
   };
 
   return (
     <div className="contact">
       <div className="binder">
         <div className="column-1">
-        <h1>Contact Me</h1>
+          <h1>Contact Me</h1>
           <div className="central">
             <h2>Get in touch</h2>
           </div>
@@ -48,18 +71,31 @@ function Contact() {
         </div>
         <div className="column-2">
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="from_name" placeholder="Your Name" />
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your Name"
+              value={input.from_name} onChange={inputChange}
+            />
             <br />
 
-            <input type="email" name="from_email" placeholder="Your Email" />
+            <input
+              type="email"
+              name="from_email"
+              placeholder="Your Email"
+              value={input.from_email} onChange={inputChange}
+            />
             <br />
 
-            <textarea name="message" placeholder="Your Message here ..." />
+            <textarea
+              name="message"
+              placeholder="Your Message here ..."
+              value={input.message} onChange={inputChange}
+            />
             <br />
-            {/* <input type="submit" value="Send" /> */}
             <button>Submit</button>
           </form>
-          <p>{ResponseText}</p>
+          <p className="response">{ResponseText}</p>
         </div>
       </div>
     </div>
