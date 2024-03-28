@@ -27,9 +27,9 @@ function Contact() {
 
   return (
     <div className="contact">
-      <h1>Contact Me</h1>
       <div className="binder">
         <div className="column-1">
+        <h1>Contact Me</h1>
           <div className="central">
             <h2>Get in touch</h2>
           </div>
@@ -48,10 +48,10 @@ function Contact() {
         </div>
         <div className="column-2">
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="from_name" placeholder="Type Name" />
+            <input type="text" name="from_name" placeholder="Your Name" />
             <br />
 
-            <input type="email" name="from_email" placeholder="Type Email" />
+            <input type="email" name="from_email" placeholder="Your Email" />
             <br />
 
             <textarea name="message" placeholder="Your Message here ..." />
