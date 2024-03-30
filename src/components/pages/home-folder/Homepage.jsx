@@ -1,5 +1,5 @@
 import React from "react";
-import Myimage from "../../../../public/asset/picture.jpg"
+import Myimage from "../../../../public/assets/images/picture.jpg"
 import Skills from "../../Skills/Skills"
 import "./style.css"
 
