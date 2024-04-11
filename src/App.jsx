@@ -12,6 +12,7 @@ import Skills from './components/Skills/Skills';
 
 function App() {
   return (
+    <main>
     <Router>
       <Navbar />
       <Routes>
@@ -21,9 +22,9 @@ function App() {
         <Route path="contact/*" element={<Contact />} />
         <Route path="about" element={<About />} />
       </Routes>
-      
       <Footer/>
     </Router>
+    </main>
     
   );
 }

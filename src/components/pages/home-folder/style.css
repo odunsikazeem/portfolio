@@ -4,7 +4,7 @@
     align-items: center;
     text-align:left;
     padding: 40px;
-    line-height: 45px;
+    line-height: 3.0rem;
 }
  
 .homepage-row {
@@ -22,6 +22,7 @@
 }
 
 .homepage p {
+    margin: 10px 0;
     text-align: justify;
 }
     
