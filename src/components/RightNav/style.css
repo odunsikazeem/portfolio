@@ -28,11 +28,8 @@
     .nav-tabs {
         flex-flow: column nowrap; 
         background-color: #74b9ff;
-        position: fixed;
+        position: unset;
         top: 0;
         right: 0;
-        height: 20vh;
-        width: 150px;
-        padding-top: 3.5rem;
     } 
   }
